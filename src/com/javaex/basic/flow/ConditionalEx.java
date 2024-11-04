@@ -12,7 +12,9 @@ public class ConditionalEx {
 //		ifPractice01();
 //		switchEx();
 //		switchEx2();
-		switchPractice();
+//		switchPractice();
+//		test1();
+		test2();
 	}
 	
 	private static void ifEx() {
@@ -73,6 +75,7 @@ public class ConditionalEx {
 				System.out.println("음수입니다.");
 			}
 		}
+		scanner.close();
 	}
 	
 	private static void ifPractice01() {
@@ -100,7 +103,6 @@ public class ConditionalEx {
 			System.out.println("상담원에게 문의하세요~");
 		}
 		scanner.close();
-		
 	}
 	
 	private static void switchEx() {
@@ -132,7 +134,6 @@ public class ConditionalEx {
 			break;
 		}
 		scanner.close();
-		
 	}
 	
 	private static void switchEx2() {
@@ -197,9 +198,60 @@ public class ConditionalEx {
 			System.out.println("다시 쓰세유");
 		}
 		scanner.close();
+	}
+	
+	private static void test1() {
+		//점수를 입력받아
+		//입력된 수가 3의 배수인지 판별하는 프로그램
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("숫자 입력하세요 :");
+		
+		int num = scanner.nextInt();
+		
+		if(num % 3 == 0) {
+			System.out.println("3의 배수 입니다.");
+		}
+		else {
+			System.out.println("3의 배수 아닙니다.");
+		}
+		scanner.close();
+	}
+	
+	private static void test2() {
+		//점수를 입력받아
+		//등급을 표시하는 프로그램
+		//90점 이상 - A등급
+		//80점~89점 - B등급
+		//70점~79점 - C등급
+		//60점~69점 - D등급
+		//60점 미만 - F등급
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("점수를 입력하세요 :");
+		
+		int score = scanner.nextInt();
+		
+		if (score >= 90) {
+			System.out.println("A등급");
+		}
+		else if (score >= 80) {
+			System.out.println("B등급");
+		}
+		else if (score >= 70) {
+			System.out.println("C등급");
+		}
+		else if (score >= 60) {
+			System.out.println("D등급");
+		}
+		else {
+			System.out.println("F등급");
+		}
+		scanner.close();
 		
 		
 	}
+	
 
 	
 	
