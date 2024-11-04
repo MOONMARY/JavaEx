@@ -10,7 +10,9 @@ public class ConditionalEx {
 //		ifEx2();
 //		ifEx3();
 //		ifPractice01();
-		switchEx();
+//		switchEx();
+//		switchEx2();
+		switchPractice();
 	}
 	
 	private static void ifEx() {
@@ -130,6 +132,72 @@ public class ConditionalEx {
 			break;
 		}
 		scanner.close();
+		
+	}
+	
+	private static void switchEx2() {
+		//1,3,5,7,8,10,12월 -> 31일
+		//2 -> 28일
+		//4,6,9,11월 -> 30일
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("월을 입력하세요 : ");
+		
+		int month = scanner.nextInt();
+		
+		switch(month) {
+		case 1,3,5,7,8,10,12 :
+			System.out.println("31일");
+		break;
+		case 4,6,9,11 :
+			System.out.println("30일");
+		break;
+		case 2 :
+			System.out.println("28일");
+		break;
+		default :
+			System.out.println("1~12월 중에서만 입력하세요!");
+			break;
+		}
+		scanner.close();
+	}
+	
+	private static void switchPractice() {
+		//TODO: 이 코드를 나중에 enum(열거형) 객체로 다시 만들 예정
+		
+		//문자열 변수에 문자열로 요일 정보를 입력
+		//"SUNDAY" -> 휴식
+		//"MONDAY"~"THURSDAY" -> 열공
+		//"FRIDAY" -> 열공후 불금
+		//"SATURDAY" -> 주말
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("요일을 영어 대문자로 작성하세유 :");
+		
+		String day = scanner.next().toUpperCase();
+		
+		switch(day) {
+		case "SUNDAY" :
+			System.out.println("휴식");
+			break;
+		case "MONDAY" :
+		case "TUESDAY" :
+		case "WEDNESDAY" :
+		case "THURSDAY" :
+			System.out.println("열공");
+			break;
+		case "FRIDAY" :
+			System.out.println("열공 후 불금");
+			break;
+		case "SATURDAY" :
+			System.out.println("주말");
+			break;
+		default:
+			System.out.println("다시 쓰세유");
+		}
+		scanner.close();
+		
 		
 	}
 
