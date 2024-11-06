@@ -8,7 +8,7 @@ public class Ex05 {
 		// TODO Auto-generated method stub
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("숫자 5개를 입력해봐");
+		System.out.println("숫자 5개를 입력");
 		
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();

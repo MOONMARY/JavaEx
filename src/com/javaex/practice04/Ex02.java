@@ -14,7 +14,7 @@ public class Ex02 {
 		arr[1] = 3.3;
 		arr[2] = 6.7;
 		
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = arr.length - 1; i >= 0; i--) {
 			System.out.println(arr[i]);
 		}
 	}
