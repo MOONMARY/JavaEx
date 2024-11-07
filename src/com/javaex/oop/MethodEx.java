@@ -23,7 +23,16 @@ public class MethodEx {
 		
 		//방법2. 가변인수를 사용한다
 		System.out.println("getSumVar: " + getSumVar(1, 2, 3, 4, 5, 6, 7, 8));
+		
+		//일반 매개변수와 가변 매개변수 함께 사용할 때
+		//일반 매개변수 먼저, 가변 매개변수 나중에 선언
+		printSum("합산값", 1, 2, 3, 4, 5, 6, 7, 8);
 	}
+	
+	private static void printSum(String message, double ... values) {
+		System.out.println(message + ":" + getSumVar(values));
+	}
+	
 	//방법2
 	private static double getSumVar(double ... values) {
 		double total = 0;
