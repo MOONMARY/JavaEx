@@ -1,4 +1,4 @@
-package com.javaex.io.bytes;
+package com.javaex.io.bytestream;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

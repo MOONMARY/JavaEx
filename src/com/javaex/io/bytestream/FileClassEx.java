@@ -1,4 +1,4 @@
-package com.javaex.io.bytes;
+package com.javaex.io.bytestream;
 
 import java.io.File;
 import java.io.IOException;
